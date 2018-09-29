@@ -6,14 +6,16 @@ import com.merricklabs.pdxalerts.handlers.CancelandStopIntentHandler
 import com.merricklabs.pdxalerts.handlers.FallbackIntentHandler
 import com.merricklabs.pdxalerts.handlers.HelpIntentHandler
 import com.merricklabs.pdxalerts.handlers.LaunchRequestHandler
+import com.merricklabs.pdxalerts.handlers.SessionEndedRequestHandler
 import org.koin.dsl.module.module
 
 val PdxAlertsModule = module {
     single { PdxAlertsConfig() }
     single { TwitterClientImpl() as TwitterClient }
 
+    single { LaunchRequestHandler() }
     single { CancelandStopIntentHandler() }
     single { FallbackIntentHandler() }
     single { HelpIntentHandler() }
-    single { LaunchRequestHandler() }
+    single { SessionEndedRequestHandler() }
 }

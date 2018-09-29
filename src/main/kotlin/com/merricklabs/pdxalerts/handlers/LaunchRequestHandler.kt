@@ -51,5 +51,4 @@ class LaunchRequestHandler : RequestHandler, KoinComponent {
                 .withSimpleCard(invocationName, speechText)
                 .build()
     }
-
 }

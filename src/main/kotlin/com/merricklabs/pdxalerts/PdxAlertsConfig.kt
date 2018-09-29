@@ -19,7 +19,7 @@ class PdxAlertsConfig : KoinComponent {
         val twitterHandle: String = if (System.getenv("TWITTER_HANDLE") != null)
             System.getenv("TWITTER_HANDLE")
         else
-            "pdxalerts"
+            "@pdxalerts"
         val consumerKey: String = System.getenv("TWITTER_CONSUMER_KEY")
         val consumerSecret: String = System.getenv("TWITTER_CONSUMER_SECRET")
         val accessToken: String = System.getenv("TWITTER_ACCESS_TOKEN")

@@ -24,10 +24,10 @@ class PdxAlertsStreamHandler : SkillStreamHandler(skill) {
 
                 return Skills.standard()
                         .addRequestHandlers(
+                                LaunchRequestHandler(),
                                 CancelandStopIntentHandler(),
                                 FallbackIntentHandler(),
                                 HelpIntentHandler(),
-                                LaunchRequestHandler(),
                                 SessionEndedRequestHandler()
                         )
                         .withSkillId(PdxAlertsConfig().alexa.skillId)
