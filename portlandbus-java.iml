@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="PortlandBus-Java" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/classes/kotlin/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.71/5470d1f752cd342edb77e1062bac07e838d2cea4/kotlin-stdlib-jdk8-1.2.71.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk/2.4.1/f852ca01f0a87d86abc9de6d415abb2b4adbfed1/ask-sdk-2.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.11.0/75966e05a49046ca2ae734e5626f28837a8d1e82/okhttp-3.11.0.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/1.0.1/fb3816d35ef25b7f6e9074c2cdd5131408baf7a0/koin-core-1.0.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging/1.6.10/c1d7b05c311c60df1b66017ff3ebec80e417e97d/kotlin-logging-1.6.10.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk-lambda-support/2.4.1/9916f687ffb88117e5ee14219dd1cce056afed8a/ask-sdk-lambda-support-2.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk-servlet-support/2.4.1/36005531b33c488e3ab3f5f3560b987899e47980/ask-sdk-servlet-support-2.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk-dynamodb-persistence-adapter/2.4.1/b73277ba20fd50675bcc201bd8a637fb264b077/ask-sdk-dynamodb-persistence-adapter-2.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk-core/2.4.1/1875168d245cabba8f88bbb9670f334a7f84659c/ask-sdk-core-2.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk-apache-client/2.4.1/ca905912b10ba36c135859a3e8aac7acaf81dd3b/ask-sdk-apache-client-2.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging-common/1.6.10/98507484fee3491b386684a0d7be18a0be499e9d/kotlin-logging-common-1.6.10.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.25/110cefe2df103412849d72ef7a67e4e91e4266b4/slf4j-log4j12-1.7.25.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazon.alexa/ask-sdk-model/1.4.1/84d7998ff29e0e427dc37e138bc1fc3a8fd8dcb0/ask-sdk-model-1.4.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.4/12d52679a6615c7972ea25bd8ebb60b191fe79b7/jackson-datatype-jsr310-2.9.4.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-dynamodb/1.11.301/a98b87ed40f2b8b83a156c44d2e9ef9b543dbf91/aws-java-sdk-dynamodb-1.11.301.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.301/ac56cf7add8f41cb77aa81549982139874df9ac9/aws-java-sdk-s3-1.11.301.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-kms/1.11.301/2e1230c0b34f58e81e6b649bc2a3018098e0dd23/aws-java-sdk-kms-1.11.301.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-core/1.11.301/7826fec4a387a6923cfd971427c817daaa9c8a45/aws-java-sdk-core-1.11.301.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.7/ba9e74b11135b18248e960df657a2b86ae77a079/jackson-dataformat-cbor-2.6.7.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazonaws/jmespath-java/1.11.301/1aca3f3aeb6e40af8d85de54c7d7154298043fab/jmespath-java-1.11.301.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.4/498bbc3b94f566982c7f7c6d4d303fce365529be/jackson-databind-2.9.4.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.4/a9a71ec1aa37da47db168fede9a4a5fb5e374320/jackson-core-2.9.4.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-lambda-java-core/1.0.0/bd88108c3f1f8a2048c00fe7efb29ef984726d3d/aws-lambda-java-core-1.0.0.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.5/1603dfd56ebcd583ccdf337b6c3984ac55d89e58/httpclient-4.5.5.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.4/1380b592ad70439346b5d954ad202be048451c5a/jackson-annotations-2.9.4.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.9/a86ce739e5a7175b4b234c290a00a5fdb80957a0/httpcore-4.4.9.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/software.amazon.ion/ion-java/1.0.2/ee9dacea7726e495f8352b81c12c23834ffbc564/ion-java-1.0.2.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.1/f5bfc718c95a7b1d3c371bb02a188a4df18361a9/joda-time-2.8.1.jar:/Users/davidmerrick/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="PortlandBus-Java" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.2" />
+          <option name="apiVersion" value="1.2" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.2.71/da644c001c36f531dcf34bb9fe37ce08b9c9949f/kotlin-scripting-compiler-embeddable-1.2.71.jar" />
+            </array>
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/out/production/classes" />
+    <output-test url="file://$MODULE_DIR$/out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk:2.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.squareup.okhttp3:okhttp:3.11.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.koin:koin-core:1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: io.github.microutils:kotlin-logging:1.6.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.71" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk-lambda-support:2.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk-servlet-support:2.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk-dynamodb-persistence-adapter:2.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk-core:2.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk-apache-client:2.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.squareup.okio:okio:1.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: io.github.microutils:kotlin-logging-common:1.6.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazon.alexa:ask-sdk-model:1.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazonaws:aws-java-sdk-dynamodb:1.11.301" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazonaws:aws-java-sdk-s3:1.11.301" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazonaws:aws-java-sdk-kms:1.11.301" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazonaws:aws-java-sdk-core:1.11.301" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.6.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazonaws:jmespath-java:1.11.301" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.amazonaws:aws-lambda-java-core:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: software.amazon.ion:ion-java:1.0.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: joda-time:joda-time:2.8.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk:2.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.squareup.okhttp3:okhttp:3.11.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.koin:koin-core:1.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.microutils:kotlin-logging:1.6.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.71" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk-lambda-support:2.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk-servlet-support:2.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk-dynamodb-persistence-adapter:2.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk-core:2.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk-apache-client:2.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.squareup.okio:okio:1.14.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.microutils:kotlin-logging-common:1.6.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazon.alexa:ask-sdk-model:1.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazonaws:aws-java-sdk-dynamodb:1.11.301" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazonaws:aws-java-sdk-s3:1.11.301" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazonaws:aws-java-sdk-kms:1.11.301" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazonaws:aws-java-sdk-core:1.11.301" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.6.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazonaws:jmespath-java:1.11.301" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.amazonaws:aws-lambda-java-core:1.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: software.amazon.ion:ion-java:1.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: joda-time:joda-time:2.8.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:3.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.koin:koin-test:1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.koin:koin-core:1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.github.microutils:kotlin-logging:1.6.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.testng:testng:6.14.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.71" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk-lambda-support:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk-servlet-support:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk-dynamodb-persistence-adapter:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk-core:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk-apache-client:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio:1.14.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.github.microutils:kotlin-logging-common:1.6.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.beust:jcommander:1.72" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache-extras.beanshell:bsh:2.0b6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-inline:2.21.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazon.alexa:ask-sdk-model:1.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazonaws:aws-java-sdk-dynamodb:1.11.301" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazonaws:aws-java-sdk-s3:1.11.301" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazonaws:aws-java-sdk-kms:1.11.301" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazonaws:aws-java-sdk-core:1.11.301" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.6.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazonaws:jmespath-java:1.11.301" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.amazonaws:aws-lambda-java-core:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.21.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy:1.8.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy-agent:1.8.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: software.amazon.ion:ion-java:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: joda-time:joda-time:2.8.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+</module>

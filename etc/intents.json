@@ -1,0 +1,73 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "portland bus",
+      "intents": [
+        {
+          "name": "GetArrivalsIntent",
+          "slots": [
+            {
+              "name": "stopId",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "get arrivals at stop {stopId}",
+            "get next arrivals for stop {stopId}",
+            "about stop {stopId}",
+            "get arrivals for stop {stopId}",
+            "get stop {stopId}",
+            "get stop {stopId} arrivals",
+            "arrivals at stop {stopId}",
+            "buses at stop {stopId}",
+            "about stop {stopId} arrivals",
+            "next arrivals at stop {stopId}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "SaveStopIntent",
+          "slots": [
+            {
+              "name": "stopId",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "to save stop {stopId}",
+            "Ask Portland Bus to save {stopId}",
+            "Save {stopId}",
+            "Ask Portland Bus to save stop {stopId}",
+            "Save stop {stopId}"
+          ]
+        },
+        {
+          "name": "MyStopIntent",
+          "slots": [
+            {
+              "name": "stopId",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "next arrivals at my stop",
+            "my stop",
+            "Ask Portland bus about my stop"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+language: java
+branches:
+  only:
+  - stg
+  - prd
+install:
+  - ./gradlew build
+test:
+  - ./gradlew test
+deploy:
+  - provider: lambda
+    skip_cleanup: true
+    function_name: PDXAlerts-prd
+    region: us-west-2
+    role: $LAMBDA_ROLE
+    runtime: java8
+    module_name: com.merricklabs.pdxalerts
+    handler_name: PdxAlertsStreamHandler
+    zip: "${TRAVIS_BUILD_DIR}/build/distributions/PdxAlerts.zip"
+    memory_size: 512
+    timeout: 5
+    on:
+      branch: prd
+  - provider: lambda
+    skip_cleanup: true
+    function_name: PDXAlerts-prd
+    region: us-west-2
+    role: $LAMBDA_ROLE
+    runtime: java8
+    module_name: com.merricklabs.pdxalerts
+    handler_name: PdxAlertsStreamHandler
+    zip: "${TRAVIS_BUILD_DIR}/build/distributions/PdxAlerts.zip"
+    memory_size: 512
+    timeout: 5
+    on:
+      branch: stg
+
+env:
+  global:
+  - secure: 0G3oHfGh4OEtpxV8wm6M8KTPJSBfF3VI2GqJyghgvFHj069pgksQ2WZz1H16lUlJ4Ymhiyn3Ywbk8cUshP33D9c1ki+uDtGk/h2qrPksM3lkvIVMi52eDJZnEq2bj3B2Wg65TSMhUjI1UKFTDfTic7MYkfyrjg2N+0iLsIStET6SvmhO41D0PPrDD0Jjom4NWEOGqaTFQFB6TYil7KbYKX5fxw/cTU7BUhSXAJLMAYtWOlLd+90sZya+lTfDOptWye9yIsKzkIMlSiFLxYF458fA8mC8oI55h6BgovDMO4IYG2lJmmLsuc2bZ2B0EMTVVQsfv0htsot5F5KTsFZHlTxSKlaXvYvZqq6mGzPZJ86leIm+0u5pklNQaIqH+2A4/051ZpRPKD1rD+UjQIHMUl5lgeEryUyDT0THpC13wibg0VF6B+OvplopWh3Yj84w17oPoie7vWDfryeSPsXGGJ2/vcXBc49wrMFp6+ZQBZh1oJTGEWn5tmYq1FIct1Eq3+eZiJiO/1o5Pd1z4BqgTwqAIGVBvIPG5vtszgV+o8+zhsnG9UoGaHdQ3mpMPK6g87ZgwUIUagIkVuoqQMft1EbQ2vlY2LxOvnfidbbrAMBVGCHM3B6Zxkfwir1tFZjhGppWxvofufpaDX7+EZqOanoYfMcvOyN4KQMIasBPiJo=
+  - secure: NrKayyM9Dam5z2ZF8Yd7W00vv+Pd5/HC/U+q5GTtFCA8sICBBAaFyQnYeQpx8mFZFnjcEbqkqMjWgbdbEGVKNfs1jcPR2+3WX1DmK9MBKetO6ptG0zN2bKBZrQr9Npm1iRWu5cXgcmkCCYiaJ8EnsygewS2O4nO5BuzKCAJl6nN6l3rioyB8FTZ1/20sPfHi5pg/Amtz0Bl5m0C3CILcA37O4C3p/mUP/D54ouFfuL/XFEDrTmhN3KJuvrpnbNFaIAWtX9B2kRsbQ3Mm5c+XcueShmGBDf4cb1KaF8DBK2Dkr+T5vK8g0i7p2nzvH/Oj+XO58p8Y8plj/xeTp/QSBJ6gHrDODNipwNRyeIcJfgQiyvyGRNdqIgX+q1PN7Yb4iPqts5vlBqzRboik4IRTE6lYAs/kBGJpx43CeEvukcFhSU020Jr99a5ybpu0ueLm7IySmIand2hJRpl8OKGp6wLMa9CbVsi33Pzsi8/39fz+9e2m/SPpTBE2Y5RO0OwETOKAnAFSvjmU9cA8MnJIEdsgbPSQNSq10QUrxNTOzOZ8PAOVSonOdbCF4qTpvseMp8CMSzUIRyi7ZYTXSp7q4dujRZwIepHS/XXJnjp5JECp12EGcNjEhvvsEZeZ/LaDZvjHBbw/w6mWFgPaUmT/Of9kl28x64Q7fW5v0e5VZoE=
+  - secure: w/atQmbGcgkI9fkSGyy/0p8VtuwELZXd4cdZpSz9uWyy93sEYT71dtD/CMZKdBNVBMQK+cjxq/LikSbhMw6AW2yAT6UE248oUoGpHOoiQ8lI25M1Hw0XBja2bCVWRZU0xWH+Xu1fF9oGzqMFmarcEUjv/1jeu3qwRDY2W4HOmPq5UGYJLBsSh6f/sK2wsJq0m7lEcfRUlAYHwMc9sx1CM/46G5E5dmwrnkG4DhM0UUSU5fVhQQflDdQz4HfBjZAUyk0wtUps1gBHh/rvKPJEH2OKypYEooi2zuoBayqcyLzINIA6ZReG2x7ulxPp2TyhxlLNb6j5qVe4qxhWcP0Svu4B33L4UldWj2r9DAmFCNkEpnNNn3NMu78XmSw2fbtxRaiUEV3Bk6t0MfjH6G4hkqLjkppQfWW2lJrh9Nytjqi3JCpqFlcmzgx26cFLwJCQN7q8yfiOGNBVvAz62oboxJznLTnbJhI+NZRm57i2CvqCUj+8w8fypNALwA3whhPGl/xz51iggGF5vpAqoGYoz6dXARGAL+BK7cq75gJoelMhkHV8gLv0EE06L6IpUtxncInVXzNK2nhuFtDz90L/WNPVVYK4YKnXlHN56jVpl8h2fjeEDpyRM5XkShjVP+t68PBmb3OiC50rQT7HSatKz0VK91tXuw6L7r76TSllSPQ=
