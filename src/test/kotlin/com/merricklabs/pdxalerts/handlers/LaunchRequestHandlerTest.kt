@@ -26,7 +26,8 @@ class LaunchRequestHandlerTest : PdxAlertsIntegrationTestBase() {
         val responseOptional = launchRequestHandler.handle(input)
         Assert.assertTrue(responseOptional.isPresent)
 
-        val speechText = responseOptional.get().getOutputSpeech().toString()
+        val speechText = responseOptional.get().outputSpeech.toString()
+        Assert.assertTrue(speechText.contains(config.alexa.invocationName))
         Assert.assertTrue(speechText.contains(statusText))
     }
 

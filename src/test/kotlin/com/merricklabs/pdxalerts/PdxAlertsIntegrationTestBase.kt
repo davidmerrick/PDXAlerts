@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod
 open class PdxAlertsIntegrationTestBase : KoinTest {
 
     protected val twitterClient: TwitterClient by inject()
+    protected val config: PdxAlertsConfig by inject()
 
     @BeforeMethod(groups = [INTEGRATION_GROUP])
     fun beforeClass() {
