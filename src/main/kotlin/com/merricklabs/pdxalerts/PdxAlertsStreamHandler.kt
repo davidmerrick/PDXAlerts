@@ -8,13 +8,18 @@ import com.merricklabs.pdxalerts.handlers.FallbackIntentHandler
 import com.merricklabs.pdxalerts.handlers.HelpIntentHandler
 import com.merricklabs.pdxalerts.handlers.LaunchRequestHandler
 import com.merricklabs.pdxalerts.handlers.SessionEndedRequestHandler
+import mu.KotlinLogging
 import org.koin.standalone.StandAloneContext.startKoin
+
+private val log = KotlinLogging.logger {}
 
 class PdxAlertsStreamHandler : SkillStreamHandler(skill) {
 
     companion object {
         val skill: Skill
             get() {
+                log.info { "Starting skill" }
+
                 startKoin(listOf(PdxAlertsModule))
 
                 return Skills.standard()
