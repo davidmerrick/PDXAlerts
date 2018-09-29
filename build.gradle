@@ -26,7 +26,8 @@ dependencies {
             "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
             'com.amazon.alexa:ask-sdk:2.4.1',
             'org.koin:koin-core:1.0.1',
-            'io.github.microutils:kotlin-logging:1.6.10'
+            'io.github.microutils:kotlin-logging:1.6.10',
+            'org.twitter4j:twitter4j-core:4.0.7'
     )
 
     testCompile(

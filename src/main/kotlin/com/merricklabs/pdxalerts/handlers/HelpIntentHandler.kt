@@ -19,17 +19,14 @@ class HelpIntentHandler : RequestHandler, KoinComponent {
     }
 
     override fun handle(input: HandlerInput): Optional<Response> {
-        val repromptText = "Which stop would you like information about?"
-        val INVOCATION_NAME = config.alexa.invocationName
-        val speechText = StringBuilder()
-                .append("Welcome to $INVOCATION_NAME. ")
-                .append("I can retrieve arrival times for bus stops in Portland, Oregon. ")
-                .append(repromptText)
-                .toString()
+        val invocationName = config.alexa.invocationName
+        val speechText = """
+            Welcome to $invocationName.
+            For the latest Portland alerts, simply open this skill.
+            """
         return input.responseBuilder
                 .withSpeech(speechText)
-                .withSimpleCard(INVOCATION_NAME, speechText)
-                .withReprompt(repromptText)
+                .withSimpleCard(invocationName, speechText)
                 .build()
     }
 }

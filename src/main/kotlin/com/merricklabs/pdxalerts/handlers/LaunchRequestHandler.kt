@@ -19,30 +19,36 @@ import com.amazon.ask.model.LaunchRequest
 import com.amazon.ask.model.Response
 import com.amazon.ask.request.Predicates.requestType
 import com.merricklabs.pdxalerts.PdxAlertsConfig
+import com.merricklabs.pdxalerts.external.twitter.TwitterClient
+import mu.KotlinLogging
 import org.koin.standalone.KoinComponent
 import org.koin.standalone.inject
 import java.util.Optional
 
+private val log = KotlinLogging.logger {}
+
 class LaunchRequestHandler : RequestHandler, KoinComponent {
 
     private val config by inject<PdxAlertsConfig>()
+    private val twitterClient by inject<TwitterClient>()
 
     override fun canHandle(input: HandlerInput): Boolean {
         return input.matches(requestType(LaunchRequest::class.java))
     }
 
     override fun handle(input: HandlerInput): Optional<Response> {
-        val repromptText = "Which stop would you like information about?"
-        val INVOCATION_NAME = config.alexa.invocationName
-        val speechText = StringBuilder()
-                .append("Welcome to $INVOCATION_NAME. ")
-                .append("I can retrieve arrival times for bus stops in Portland, Oregon. ")
-                .append(repromptText)
-                .toString()
+        val invocationName = config.alexa.invocationName
+
+        log.info { "Fetching latest Tweet from ${config.twitter.twitterHandle}" }
+        val latest = twitterClient.getLatestTweet()
+
+        val speechText = """
+                Latest from $invocationName:
+                ${latest.text}
+        """
         return input.responseBuilder
                 .withSpeech(speechText)
-                .withSimpleCard(INVOCATION_NAME, speechText)
-                .withReprompt(repromptText)
+                .withSimpleCard(invocationName, speechText)
                 .build()
     }
 
