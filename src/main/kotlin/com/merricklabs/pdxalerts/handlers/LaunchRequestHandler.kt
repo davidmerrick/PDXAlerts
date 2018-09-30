@@ -40,11 +40,25 @@ class LaunchRequestHandler : RequestHandler, KoinComponent {
         val invocationName = config.alexa.invocationName
 
         log.info { "Fetching latest Tweet from ${config.twitter.twitterHandle}" }
-        val latest = twitterClient.getLatestTweet()
+        val latest = twitterClient.getLatestTweets()
+        if (latest.isEmpty()) {
+            return noTweetsResponse(input)
+        }
 
         val speechText = """
                 Latest from $invocationName:
-                ${latest.text}
+                ${latest[0].text}
+        """
+        return input.responseBuilder
+                .withSpeech(speechText)
+                .withSimpleCard(invocationName, speechText)
+                .build()
+    }
+
+    fun noTweetsResponse(input: HandlerInput): Optional<Response> {
+        val invocationName = config.alexa.invocationName
+        val speechText = """
+                Sorry, no recent Tweets were found.
         """
         return input.responseBuilder
                 .withSpeech(speechText)

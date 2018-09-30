@@ -13,7 +13,6 @@ import twitter4j.conf.ConfigurationBuilder
 private val log = KotlinLogging.logger {}
 
 class TwitterClientImpl : KoinComponent, TwitterClient {
-
     private val config: PdxAlertsConfig by inject()
     private val twitter: Twitter
 
@@ -30,7 +29,7 @@ class TwitterClientImpl : KoinComponent, TwitterClient {
         twitter = tf.instance
     }
 
-    override fun getLatestTweet(): Status {
-        return twitter.getUserTimeline(config.twitter.twitterHandle, Paging(1, 1))[0]
+    override fun getLatestTweets(count: Int): List<Status> {
+        return twitter.getUserTimeline(config.twitter.twitterHandle, Paging(1, count))
     }
 }

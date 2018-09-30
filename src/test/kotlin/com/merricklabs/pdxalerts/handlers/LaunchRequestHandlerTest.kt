@@ -16,11 +16,11 @@ class LaunchRequestHandlerTest : PdxAlertsIntegrationTestBase() {
 
     @Test(groups = [INTEGRATION_GROUP])
     fun `launch skill`() {
-        // Init mocks
+        // Init mock
         val statusText = "hello world"
         var status = MockStatus()
         status.text = statusText
-        Mockito.`when`(twitterClient.getLatestTweet()).thenReturn(status)
+        Mockito.`when`(twitterClient.getLatestTweets()).thenReturn(listOf(status))
 
         val input = getValidInput()
         val responseOptional = launchRequestHandler.handle(input)
@@ -29,6 +29,19 @@ class LaunchRequestHandlerTest : PdxAlertsIntegrationTestBase() {
         val speechText = responseOptional.get().outputSpeech.toString()
         Assert.assertTrue(speechText.contains(config.alexa.invocationName))
         Assert.assertTrue(speechText.contains(statusText))
+    }
+
+    @Test(groups = [INTEGRATION_GROUP])
+    fun `no Tweets found`() {
+        // Init mock
+        Mockito.`when`(twitterClient.getLatestTweets()).thenReturn(listOf())
+
+        val input = getValidInput()
+        val responseOptional = launchRequestHandler.handle(input)
+        Assert.assertTrue(responseOptional.isPresent)
+
+        val speechText = responseOptional.get().outputSpeech.toString()
+        Assert.assertTrue(speechText.toLowerCase().contains("sorry, no recent tweets were found"))
     }
 
     private fun getValidInput(): HandlerInput {
