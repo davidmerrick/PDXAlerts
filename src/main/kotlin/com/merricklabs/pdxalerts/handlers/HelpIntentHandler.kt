@@ -22,7 +22,7 @@ class HelpIntentHandler : RequestHandler, KoinComponent {
         val invocationName = config.alexa.invocationName
         val speechText = """
             Welcome to $invocationName.
-            For the latest Portland alerts, simply open this skill.
+            For the latest Portland alert, launch this skill.
             """
         return input.responseBuilder
                 .withSpeech(speechText)

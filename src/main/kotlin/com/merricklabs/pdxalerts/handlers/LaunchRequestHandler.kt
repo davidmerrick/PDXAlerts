@@ -46,7 +46,7 @@ class LaunchRequestHandler : RequestHandler, KoinComponent {
         }
 
         val speechText = """
-                Latest from $invocationName:
+                Latest alert:
                 ${latest[0].text}
         """
         return input.responseBuilder
@@ -58,7 +58,7 @@ class LaunchRequestHandler : RequestHandler, KoinComponent {
     fun noTweetsResponse(input: HandlerInput): Optional<Response> {
         val invocationName = config.alexa.invocationName
         val speechText = """
-                Sorry, no recent Tweets were found.
+                Sorry, no recent alerts were found.
         """
         return input.responseBuilder
                 .withSpeech(speechText)
